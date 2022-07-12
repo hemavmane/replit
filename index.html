@@ -1,0 +1,14 @@
+
+function order(menu){
+    let menuFilter=menu.filter(x=>x.includes("Paneer"))
+    console.log(menuFilter)
+   let final= menuFilter.filter(x=>x.indexOf("Rice")==-1)
+   
+    return final.toString()
+  }
+  console.log(order(['Paneer Fried Rice', 'Chicken Biryani', 'Paneer Paratha', 'Cold Coffee']))
+  exports.order = order
+  
+  
+  
+  
